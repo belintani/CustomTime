@@ -17,6 +17,10 @@ type Time struct {
 	Minute  int
 }
 
+func main() {
+
+}
+
 func Now() (value *Time, err error) {
 	return NewTime(time.Now().UTC())
 }
