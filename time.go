@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-/// Time is a custom implementation of time.Time
+// Time is a custom implementation of time.Time
 type Time struct {
 	Unix    int64        `json:",omitempty"`
 	Year    int          `json:",omitempty"`
@@ -64,7 +64,7 @@ func (ct Time) String() string {
 	return b.String()
 }
 
-// Returns a filename as String based on Time.
+// FileName returns a String based on Time.
 // It should be helpful for implementation of a datalake
 func (ct Time) FileName() string {
 	var b strings.Builder
