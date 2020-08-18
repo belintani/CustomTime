@@ -1,4 +1,4 @@
-package cTime
+package ctime
 
 import (
 	"testing"
